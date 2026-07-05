@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profile>
+  <Maintainer>
+    <!-- Your GitHub avatar or a custom logo URL -->
+    <Icon>https://github.com/jarretraim.png</Icon>
+    
+    <!-- How you want to be identified in the Unraid CA store -->
+    <Name>jarretraim</Name>
+    
+    <!-- Link to your GitHub profile or personal website -->
+    <Website>https://github.com/jarretraim</Website>
+    
+    <!-- (Optional) Support links for your catalog as a whole -->
+    <Support>https://github.com/jarretraim/unraid-superset/issues</Support>    
+  </Maintainer>
+</Profile>
