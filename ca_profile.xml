@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Profile>
-  <Maintainer>
+<CommunityApplications>
+    <Profile>
+        Simple Unraid wrapper around Apache's Docker file.
+    </Profile>
     <!-- Your GitHub avatar or a custom logo URL -->
     <Icon>https://github.com/jarretraim.png</Icon>
     
@@ -8,9 +10,8 @@
     <Name>jarretraim</Name>
     
     <!-- Link to your GitHub profile or personal website -->
-    <Website>https://github.com/jarretraim</Website>
+    <WebPage>https://github.com/jarretraim/unraid-superset</WebPage>
     
     <!-- (Optional) Support links for your catalog as a whole -->
-    <Support>https://github.com/jarretraim/unraid-superset/issues</Support>    
-  </Maintainer>
-</Profile>
+    <Support>https://github.com/jarretraim/unraid-superset/issues</Support>
+</CommunityApplications>
