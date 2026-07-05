@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Apache-Superset</Name>
+  <Repository>ghcr.io/jarretraim/unraid-superset:latest</Repository>
+  <Registry>https://github.com/jarretraim/unraid-superset/pkgs/container/unraid-superset</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jarretraim/unraid-superset/issues</Support>
+  <Project>https://superset.apache.org/</Project>
+  <Overview>Apache Superset is a modern data exploration and visualization platform. This container is packaged specifically for Unraid, featuring automated database initialization and admin account creation on the first run.</Overview>
+  <Category>Tools:Utilities;Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8088]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/apache/superset/master/superset-frontend/src/assets/images/superset-logo-horiz.png</Icon>
+  
+  <Config Name="WebUI Port" Target="8088" Default="8088" Mode="tcp" Description="Port for the Superset WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="App Data" Target="/app/superset_home" Default="/mnt/user/appdata/superset" Mode="rw" Description="Persistent storage for the SQLite database and configurations." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Admin Username" Target="ADMIN_USERNAME" Default="admin" Mode="" Description="Default admin username" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="admin" Mode="" Description="Default admin password" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Admin Email" Target="ADMIN_EMAIL" Default="admin@localhost" Mode="" Description="Default admin email" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Secret Key" Target="SUPERSET_SECRET_KEY" Default="change_this_to_a_random_string" Mode="" Description="Secret key for Flask. Change this to a secure random string." Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
